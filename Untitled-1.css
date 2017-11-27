@@ -1,0 +1,22 @@
+body {
+     background-color: deepskyblue;
+     font-size: 10px;
+     font-family: Arial, Geneva, Verdana, Helvetica, sans-serif;
+     line-height: 1.5;
+     
+}
+img{
+    max-width: 100%;
+}
+p {
+    
+}
+ .carousel-control.right{background-image: none;}
+
+.carousel-control.left{background-image: none;}
+
+.carousel {
+    margin: 10px;
+}
+
+    
