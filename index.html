@@ -80,7 +80,17 @@
   </div>
   
    <!-- Trigger the modal with a button -->
-   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">For more Information</button>
+
+    <form>
+      First name:<br>
+      <input type="text" name="firstname" class="fn">
+      <br>
+       Last name:<br>
+       <input type="text" name="lastname" class="ln">
+        <br><br>
+           <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Would you like to donate</button>
+          </form>      
+  </form>      
 
 			<!-- Modal -->
 			<div class="modal fade" id="myModal" role="dialog">
@@ -93,21 +103,7 @@
 							<h4 class="modal-title"></h4>
 						</div>
 						<div class="modal-body">
-                         <script>
-							$("button").click(fuction() {
-                              fn = $("input[name=firstname]").val();
-                              ln = $("input[name=lastname]").val();
-                              em = $("input[name=email]").val();
-                              ad = $("input[name=address]").val();
-                              ci = $("input[name=city]").val();
-                              st = $("input[name=state]").val();
-                              zi = $("input[name=zipcode]").val();
-                              ca = $("input[name=cardnumber]").val();
-                              da = $("input[name=donationamount]").val;
-                             text ="<p>First name: "+fn+ "</p><p>Last name: "+ln+ "</p><p>Email: "+em+ "</p><p>Address: "+ad+ "</p><p>City: "+ci+ "</p><p>State: "+st+ "</p><p>Zipcode: +zi+ "</p><p>Card number: "+ca+ "</p><p>Donation Amount:"+da+ "</P>;
-                            $(".modal-body").html(text);
-                             });
-                            </script>
+                         
                               
                             
 						</div>
@@ -118,11 +114,17 @@
 
 				</div>
 			</div>
-          <script src="js/jquery.min.js"></script>
+<footer>St Jude Childrens Hospital 2017</footer>
+
+	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 <script>
-    e = $("#email").val();
-    </script>
-    </body>
-    <footer>St Jude Childrens Hospital 2017</footer>
+	$("button").click(function() {
+		f=$(".fn").val();
+		l=$(".ln").val();
+	 text ="first name: "+f+" <br> last name: "+l;
+	$(".modal-body").html(text);
+	 });
+</script>
+</body>
 </html>
